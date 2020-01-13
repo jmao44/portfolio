@@ -18,7 +18,13 @@ h1 {
     --moz-transition: background 0.5s;
 }
 
-button {
+button:hover {
+    color: white;
+    cursor: pointer;
+    background-color: steelblue;
+}
+
+.function {
     border: none;
     background: none;
     text-transform: uppercase;
@@ -30,12 +36,6 @@ button {
     --webkit-transition: all 0.3s;
     --moz-transition: all 0.3s;
     outline: none;
-}
-
-button:hover {
-    color: white;
-    cursor: pointer;
-    background-color: steelblue;
 }
 
 .square {
