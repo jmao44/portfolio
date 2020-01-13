@@ -70,7 +70,7 @@ function reset() {
         squares[i].style.backgroundColor = colors[i];
     }
     h1.style.backgroundColor = "steelblue";
-    resetBtn.textContent = "New Colors"
+    resetBtn.textContent = "New Colors?"
     messageDisplay.textContent = "Please select a color block.";
 }
 
