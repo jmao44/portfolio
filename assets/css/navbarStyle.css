@@ -2,3 +2,8 @@
     background-color: #232323;
     color: white;
 }
+
+.navbar-brand {
+    /* font-family: 'Dancing Script', cursive;*/
+    font-family: "Permanent Marker", cursive;
+}
