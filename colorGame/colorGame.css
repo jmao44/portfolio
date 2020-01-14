@@ -24,6 +24,10 @@ button:hover {
     background-color: steelblue;
 }
 
+button:focus {
+    outline: none;
+}
+
 .function {
     border: none;
     background: none;
