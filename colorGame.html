@@ -8,29 +8,30 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Permanent+Marker&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="about.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/navbarStyle.css">
-    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="css/colorGame.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+    <title>Color Game</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="../index.html">Junyan Mao</a>
+        <a class="navbar-brand" href="index.html">Junyan Mao</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                     <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../colorGame/colorGame.html">Color Game</a>
-                        <a class="dropdown-item" href="../keyBeats/keyBeats.html">Key Beats</a>
+                        <a class="dropdown-item" href="colorGame.html">Color Game</a>
+                        <a class="dropdown-item" href="keyBeats.html">Key Beats</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
@@ -42,7 +43,42 @@
             </form>
         </div>
     </nav>
+    <h1>Guess what color
+        <br><span id="colorDisplay">RGB</span><br>
+        could be
+    </h1>
 
+    <div class="stripe">
+        <button class="function" id="reset">New Colors?</button>
+    </div>
+
+    <div class="stripe">
+        <button class="function mode">Easy</button>
+        <button class="function mode selected">Medium</button>
+        <button class="function mode">Hard</button>
+        <button class="function mode">Insane</button>
+    </div>
+
+    <div class="stripe">
+        <span id="message"></span>
+    </div>
+
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <script src="js/colorGame.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

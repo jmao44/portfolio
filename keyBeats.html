@@ -8,167 +8,167 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Permanent+Marker&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="keyBeats.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/navbarStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/keyBeats.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
     <title>Key Beats</title>
-    <script src="../assets/js/lib/howler.js"></script>
-    <script type="text/javascript" src="../assets/js/lib/paper-full.js"></script>
+    <script src="js/lib/howler.js"></script>
+    <script type="text/javascript" src="js/lib/paper-full.js"></script>
     <script type="text/paperscript" canvas="myCanvas">
         var keyData = {
 	        q: {
                 sound: new Howl({
-                    src: ['sounds/bubbles.mp3']
+                    src: ['assets/keyBeats/sounds/bubbles.mp3']
                 }),
             color: '#1abc9c'
 	        },
             w: {
                 sound: new Howl({
-                    src: ['sounds/clay.mp3']
+                    src: ['assets/keyBeats/sounds/clay.mp3']
                 }),
                 color: '#2ecc71'
             },
             e: {
                 sound: new Howl({
-                    src: ['sounds/confetti.mp3']
+                    src: ['assets/keyBeats/sounds/confetti.mp3']
                 }),
                 color: '#3498db'
             },
             r: {
                 sound: new Howl({
-                    src: ['sounds/corona.mp3']
+                    src: ['assets/keyBeats/sounds/corona.mp3']
                 }),
                 color: '#9b59b6'
             },
             t: {
                 sound: new Howl({
-                    src: ['sounds/dotted-spiral.mp3']
+                    src: ['assets/keyBeats/sounds/dotted-spiral.mp3']
                 }),
                 color: '#34495e'
 	        },
             y: {
                 sound: new Howl({
-                    src: ['sounds/flash-1.mp3']
+                    src: ['assets/keyBeats/sounds/flash-1.mp3']
                 }),
                 color: '#16a085'
             },
             u: {
                 sound: new Howl({
-                    src: ['sounds/flash-2.mp3']
+                    src: ['assets/keyBeats/sounds/flash-2.mp3']
                 }),
                 color: '#27ae60'
             },
             i: {
                 sound: new Howl({
-                    src: ['sounds/flash-3.mp3']
+                    src: ['assets/keyBeats/sounds/flash-3.mp3']
                 }),
                 color: '#2980b9'
             },
             o: {
                 sound: new Howl({
-                    src: ['sounds/glimmer.mp3']
+                    src: ['assets/keyBeats/sounds/glimmer.mp3']
                 }),
                 color: '#8e44ad'
             },
             p: {
                 sound: new Howl({
-                    src: ['sounds/moon.mp3']
+                    src: ['assets/keyBeats/sounds/moon.mp3']
                 }),
                 color: '#2c3e50'
             },
             a: {
                 sound: new Howl({
-                    src: ['sounds/pinwheel.mp3']
+                    src: ['assets/keyBeats/sounds/pinwheel.mp3']
                 }),
                 color: '#f1c40f'
             },
             s: {
                 sound: new Howl({
-                    src: ['sounds/piston-1.mp3']
+                    src: ['assets/keyBeats/sounds/piston-1.mp3']
                 }),
                 color: '#e67e22'
             },
                 d: {
                 sound: new Howl({
-                    src: ['sounds/piston-2.mp3']
+                    src: ['assets/keyBeats/sounds/piston-2.mp3']
                 }),
                 color: '#e74c3c'
             },
             f: {
                 sound: new Howl({
-                    src: ['sounds/prism-1.mp3']
+                    src: ['assets/keyBeats/sounds/prism-1.mp3']
                 }),
                 color: '#95a5a6'
             },
             g: {
                 sound: new Howl({
-                    src: ['sounds/prism-2.mp3']
+                    src: ['assets/keyBeats/sounds/prism-2.mp3']
                 }),
                 color: '#f39c12'
             },
             h: {
                 sound: new Howl({
-                    src: ['sounds/prism-3.mp3']
+                    src: ['assets/keyBeats/sounds/prism-3.mp3']
                 }),
                 color: '#d35400'
             },
             j: {
                 sound: new Howl({
-                    src: ['sounds/splits.mp3']
+                    src: ['assets/keyBeats/sounds/splits.mp3']
                 }),
                 color: '#1abc9c'
             },
             k: {
                 sound: new Howl({
-                    src: ['sounds/squiggle.mp3']
+                    src: ['assets/keyBeats/sounds/squiggle.mp3']
                 }),
                 color: '#2ecc71'
             },
             l: {
                 sound: new Howl({
-                    src: ['sounds/strike.mp3']
+                    src: ['assets/keyBeats/sounds/strike.mp3']
                 }),
                 color: '#3498db'
             },
             z: {
                 sound: new Howl({
-                    src: ['sounds/suspension.mp3']
+                    src: ['assets/keyBeats/sounds/suspension.mp3']
                 }),
                 color: '#9b59b6'
             },
             x: {
                 sound: new Howl({
-                    src: ['sounds/timer.mp3']
+                    src: ['assets/keyBeats/sounds/timer.mp3']
                 }),
                 color: '#34495e'
             },
             c: {
                 sound: new Howl({
-                    src: ['sounds/ufo.mp3']
+                    src: ['assets/keyBeats/sounds/ufo.mp3']
                 }),
                 color: '#16a085'
             },
             v: {
                 sound: new Howl({
-                    src: ['sounds/veil.mp3']
+                    src: ['assets/keyBeats/sounds/veil.mp3']
                 }),
                 color: '#27ae60'
             },
             b: {
                 sound: new Howl({
-                    src: ['sounds/wipe.mp3']
+                    src: ['assets/keyBeats/sounds/wipe.mp3']
                 }),
                 color: '#2980b9'
             },
             n: {
                 sound: new Howl({
-                    src: ['sounds/zig-zag.mp3']
+                    src: ['assets/keyBeats/sounds/zig-zag.mp3']
                 }),
                 color: '#8e44ad'
             },
             m: {
                 sound: new Howl({
-                    src: ['sounds/moon.mp3']
+                    src: ['assets/keyBeats/sounds/moon.mp3']
                 }),
                 color: '#2c3e50'
             }
@@ -205,23 +205,23 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="../index.html">Junyan Mao</a>
+        <a class="navbar-brand" href="index.html">Junyan Mao</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../about/about.html">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                     <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../colorGame/colorGame.html">Color Game</a>
-                        <a class="dropdown-item" href="">Key Beats</a>
+                        <a class="dropdown-item" href="colorGame.html">Color Game</a>
+                        <a class="dropdown-item" href="keyBeats.html">Key Beats</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
