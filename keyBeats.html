@@ -16,162 +16,168 @@
     <script type="text/javascript" src="js/lib/howler.js"></script>
     <script type="text/javascript" src="js/lib/paper-full.js"></script>
     <script type="text/paperscript" canvas="myCanvas">
+        function generateColor() {
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            return "rgb(" + r + ", " + g + ", " + b + ")";
+        }
         var keyData = {
 	        q: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/bubbles.mp3']
                 }),
-            color: '#1abc9c'
+            color: generateColor()
 	        },
             w: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/clay.mp3']
                 }),
-                color: '#2ecc71'
+                color: generateColor()
             },
             e: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/confetti.mp3']
                 }),
-                color: '#3498db'
+                color: generateColor()
             },
             r: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/corona.mp3']
                 }),
-                color: '#9b59b6'
+                color: generateColor()
             },
             t: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/dotted-spiral.mp3']
                 }),
-                color: '#34495e'
+                color: generateColor()
 	        },
             y: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/flash-1.mp3']
                 }),
-                color: '#16a085'
+                color: generateColor()
             },
             u: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/flash-2.mp3']
                 }),
-                color: '#27ae60'
+                color: generateColor()
             },
             i: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/flash-3.mp3']
                 }),
-                color: '#2980b9'
+                color: generateColor()
             },
             o: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/glimmer.mp3']
                 }),
-                color: '#8e44ad'
+                color: generateColor()
             },
             p: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/moon.mp3']
                 }),
-                color: '#2c3e50'
+                color: generateColor()
             },
             a: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/pinwheel.mp3']
                 }),
-                color: '#f1c40f'
+                color: generateColor()
             },
             s: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/piston-1.mp3']
                 }),
-                color: '#e67e22'
+                color: generateColor()
             },
                 d: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/piston-2.mp3']
                 }),
-                color: '#e74c3c'
+                color: generateColor()
             },
             f: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/prism-1.mp3']
                 }),
-                color: '#95a5a6'
+                color: generateColor()
             },
             g: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/prism-2.mp3']
                 }),
-                color: '#f39c12'
+                color: generateColor()
             },
             h: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/prism-3.mp3']
                 }),
-                color: '#d35400'
+                color: generateColor()
             },
             j: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/splits.mp3']
                 }),
-                color: '#1abc9c'
+                color: generateColor()
             },
             k: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/squiggle.mp3']
                 }),
-                color: '#2ecc71'
+                color: generateColor()
             },
             l: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/strike.mp3']
                 }),
-                color: '#3498db'
+                color: generateColor()
             },
             z: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/suspension.mp3']
                 }),
-                color: '#9b59b6'
+                color: generateColor()
             },
             x: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/timer.mp3']
                 }),
-                color: '#34495e'
+                color: generateColor()
             },
             c: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/ufo.mp3']
                 }),
-                color: '#16a085'
+                color: generateColor()
             },
             v: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/veil.mp3']
                 }),
-                color: '#27ae60'
+                color: generateColor()
             },
             b: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/wipe.mp3']
                 }),
-                color: '#2980b9'
+                color: generateColor()
             },
             n: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/zig-zag.mp3']
                 }),
-                color: '#8e44ad'
+                color: generateColor()
             },
             m: {
                 sound: new Howl({
                     src: ['assets/keyBeats/A/moon.mp3']
                 }),
-                color: '#2c3e50'
+                color: generateColor()
             }
         }
         var circles = [];
